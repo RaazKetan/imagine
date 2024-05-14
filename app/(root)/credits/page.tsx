@@ -61,7 +61,7 @@ const Credits = async () => {
                 </Button>
               ) : (
                 <SignedIn>
-                  <Button variant="outline" className=" flex bg-violet-800">
+                  <Button variant="outline" className=" outline outline-1 outline-violet-700">
                   <a href="https://buy.stripe.com/test_9AQ00WbxB1Oe10I5kl" className="custom-link">
                       Purchase {plan.name}
                     </a>
