@@ -61,18 +61,17 @@ const Credits = async () => {
                 </Button>
               ) : (
                 <SignedIn>
-                  <Checkout
-                    plan={plan.name}
-                    amount={plan.price}
-                    credits={plan.credits}
-                    buyerId={user._id}
-                  />
+                  <a href="https://buy.stripe.com/test_9AQ00WbxB1Oe10I5kl" className="custom-link">
+        Purchase {plan.name}
+      </a>
                 </SignedIn>
               )}
             </li>
           ))}
+
         </ul>
       </section>
+      
     </>
   );
 };
